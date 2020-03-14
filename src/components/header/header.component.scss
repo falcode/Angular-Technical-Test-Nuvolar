@@ -1,0 +1,13 @@
+@import '../../styles-variables.scss';
+
+@media (min-width: map-get($grid-breakpoints, sm)) {
+    .c-header {
+      justify-content: space-between;
+    }
+  }
+
+@media (max-width: map-get($grid-breakpoints, sm)) {
+    .c-header {
+      justify-content: center;
+    }
+  }
