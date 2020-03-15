@@ -12,6 +12,9 @@ $dark-accent:  mat-palette($mat-amber, A200, A100, A400);
 $dark-warn:    mat-palette($mat-deep-orange);
 $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
 
+body {
+  background: #efefef;
+}
 
 .dark-theme {
   @include angular-material-theme($dark-theme);

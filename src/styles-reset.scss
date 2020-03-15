@@ -10,7 +10,6 @@ h6 {
 }
 
 * {
-
   &:active,
   :focus {
     outline: none !important;
@@ -19,4 +18,8 @@ h6 {
 
 .wrapper {
   min-height: 100vh;
+}
+
+mat-list {
+  padding: 0px;
 }

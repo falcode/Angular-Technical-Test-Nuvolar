@@ -16,6 +16,4 @@ export class HeaderComponent implements OnInit {
 
   changeTheme = (event: any) => event.checked ? this.uiService.setTheme('dark-theme') : this.uiService.setTheme('');
 
-
-
 }

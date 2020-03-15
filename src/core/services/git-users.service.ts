@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +10,9 @@ export class GitUsersService {
   private query = '?q=';
   constructor(private http: HttpClient) { }
 
-  getUsersByName = (name: string) =>
-    this.http.get<any>(this.searchUserGitHub + this.query + name)
+  getGitData = (url: string): Observable<any> =>
+    this.http.get<any>(url)
+
+  getUsersByName = (id: string): Observable<any> =>
+    this.http.get<any>(this.searchUserGitHub + this.query + id)
 }

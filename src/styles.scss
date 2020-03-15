@@ -5,3 +5,20 @@
 @import "styles-reset";
 @import "assets/themes/themes.scss";
 
+.p-wrapper {
+    padding: $page-padding;
+}
+.c-form {
+    width: 100%;
+}
+
+.c-user-card {
+    margin: $components-margin;
+    cursor: pointer;
+    mat-card-header {
+        overflow: hidden;
+    }
+}
+.c-user-card:hover {
+    box-shadow: $shadow-card !important;
+}

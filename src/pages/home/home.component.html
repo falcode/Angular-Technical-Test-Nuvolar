@@ -1,9 +1,22 @@
-<a routerLink="/home/id" routerLinkActive="active">hola</a>
-<div class="c-home">
-    <form class="c-home-search">
-      <mat-form-field class="example-full-width">
-        <mat-label>Git username!</mat-label>
-        <textarea matInput placeholder="Ex. NuvolarDev..."></textarea>
+<div class="p-wrapper">
+  <form [formGroup]="searchForm">
+    <mat-card>
+      <mat-form-field class="c-form">
+        <mat-label>Search GitHub User!</mat-label>
+        <input matInput formControlName="search" placeholder="Ex. NuvolarDev...">
       </mat-form-field>
-    </form>
+    </mat-card>
+  </form>
+  <ng-container *ngFor="let result of results | slice:0:6">
+
+    <mat-card class="c-user-card" [routerLink]="['/home', result.login]">
+      <mat-card-header>
+        <img mat-card-avatar src="{{result.avatar_url}}" />
+        <mat-card-title>
+          {{result.login}}
+        </mat-card-title>
+      </mat-card-header>
+    </mat-card>
+
+  </ng-container>
 </div>

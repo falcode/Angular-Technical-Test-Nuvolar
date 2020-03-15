@@ -1,34 +1,45 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from 'src/components/header/header.component';
-import { FormsModule } from '@angular/forms';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from 'src/pages/home/home.component';
 import { GituserComponent } from 'src/pages/gituser/gituser.component';
-import { RouterModule } from '@angular/router';
+import { HeaderComponent } from 'src/components/header/header.component';
+
+import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { HttpClientModule } from '@angular/common/http';
+import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    GituserComponent
+    GituserComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    RouterModule,
     AppRoutingModule,
-    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+
     MatSlideToggleModule,
     MatToolbarModule,
     MatInputModule,
-    RouterModule
+    MatCardModule,
+    MatListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

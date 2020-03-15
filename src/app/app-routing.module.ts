@@ -6,7 +6,7 @@ import { GituserComponent } from 'src/pages/gituser/gituser.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent, data: { animation: 'Home'}},
-  { path: 'home/id', component: GituserComponent, data: { animation: 'GitUser'}},
+  { path: 'home/:id', component: GituserComponent, data: { animation: 'GitUser'}},
   { path: '**', redirectTo: 'home'},
 
 ];
