@@ -20,8 +20,8 @@ additional: You can change the color theme by switch button on the header!
         └── services          # Contains all the api's services and ui service
     └── pages                 # Contains all the pages (components wrappers)
 
-> **External Librabies ()**: 
-[Angular Material](https://material.angular.io/)
+> **External Libraries ()**: 
+[Angular Material](https://material.angular.io/),
 [Bootstrap](https://getbootstrap.com/)
 
 
