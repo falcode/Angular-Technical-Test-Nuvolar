@@ -1,6 +1,30 @@
 # AngularTechnicalTestNuvolar
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
+
+### Technical Test - GitHub User's info getter
+The purpose of this project is to consult all of the GitHub user's list and also the number of their followers and repos.
+
+### How to Use
+/home => There's a search bar to find GitHub user, list by name match and select one of them to display more info.
+/home:id => All of the GitHub user info about his repos and followers.
+
+additional: You can change the color theme by switch button on the header!
+
+### App top-level directory layout
+
+    .src
+    ├── app                   # Root above index.html + app wrapper
+    ├── assets                # Contains all the scss of theming 
+    ├── components            # Contains all the reusable modules
+    ├── core                  # Contains logic folders : services, store, directives
+        └── services          # Contains all the api's services and ui service
+    └── pages                 # Contains all the pages (components wrappers)
+
+> **External Libraries ()**: 
+[Angular Material](https://material.angular.io/),
+[Bootstrap](https://getbootstrap.com/)
+
+
 
 ## Development server
 
